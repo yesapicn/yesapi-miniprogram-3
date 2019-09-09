@@ -1,0 +1,20 @@
+<view bind:__l="__l">
+  <page-head title="{{title}}"></page-head>
+  <view>
+    <form data-event-opts="{{[['submit',[['showOkay']]]]}}" bindsubmit="__e">
+      <view class="uni-list">
+        <view class="uni-list-cell">
+          <view class="uni-list-cell-left">小白菌讲笑话</view>
+          <view class="uni-list-cell-db">
+            <textarea maxlength='-1' type="text" placeholder=" " name="title" disabled data-event-opts="{{[['input',[['__set_model',['first','$event',[]]]]]]}}" value="{{first}}" bindinput="__e"></textarea>
+          </view>
+        </view>
+      </view>
+      <view class="uni-padding-wrap">
+        <view class="uni-btn-v">
+          <button type="primary" formType="submit">随机一个笑话~</button>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>
